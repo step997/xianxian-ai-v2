@@ -1,0 +1,48 @@
+/* ═══════════════════════════════════════════
+   RESPONSIVE — 3-breakpoint system (matching v1.0)
+   Base = mobile (<768px), no sidebar, bottom nav visible
+   ═══════════════════════════════════════════ */
+
+/* ===== Mobile base (<768px) ===== */
+:root {
+  --sidebar-width: 0px;
+}
+
+/* ===== Tablet (768-1023px) ===== */
+@media (min-width: 768px) {
+  :root {
+    --sidebar-width: 150px;
+    --theme-toggle-top: 24px;
+    --theme-toggle-right: 24px;
+  }
+
+  .app-container {
+    height: min(92dvh, 880px);
+    border-radius: 32px;
+    box-shadow: var(--shadow);
+    margin: 0 16px;
+    border: 1px solid var(--border);
+  }
+
+  .msg-body { max-width: 75%; }
+
+  .persona-list { padding: 12px 16px 24px; }
+  .persona-card-full { padding: 16px 18px; }
+  .persona-card-emoji-lg { font-size: 36px; min-width: 46px; }
+}
+
+/* ===== PC (>=1024px) ===== */
+@media (min-width: 1024px) {
+  :root { --sidebar-width: 200px; }
+
+  .msg-body { max-width: 60%; }
+
+  .persona-list { padding: 16px 24px 24px; }
+}
+
+/* ===== Small phones (<400px) ===== */
+@media (max-width: 400px) {
+  .chat-messages { padding: 8px 10px 6px; gap: 8px; }
+  .msg-bubble { font-size: 14px; padding: 10px 14px; }
+  .msg-avatar { width: 26px; height: 26px; min-width: 26px; font-size: 14px; }
+}

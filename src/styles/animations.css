@@ -1,0 +1,87 @@
+/* ═══════════════════════════════════════════
+   ANIMATIONS — from v1.0 Part 9
+   ═══════════════════════════════════════════ */
+
+@keyframes avatarFloat {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0); }
+  50%      { transform: translate(-50%, -50%) translateY(-8px); }
+}
+
+@keyframes ringPulse {
+  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  50%      { opacity: 1; transform: translate(-50%, -50%) scale(1.04); }
+}
+
+@keyframes msgSlideIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% { transform: scale(0.5); opacity: 0.35; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* pet shake */
+@keyframes petShake {
+  0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+  25% { transform: translate(-50%, -50%) rotate(-8deg); }
+  75% { transform: translate(-50%, -50%) rotate(8deg); }
+}
+
+/* pet happy bounce */
+@keyframes petHappy {
+  0%, 100% { transform: translate(-50%, -50%) scale(1); }
+  30% { transform: translate(-50%, -50%) scale(1.15); }
+  60% { transform: translate(-50%, -50%) scale(0.95); }
+}
+
+/* pet switch spin */
+@keyframes petSwitch {
+  0% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+  40% { transform: translate(-50%, -50%) scale(0.3) rotate(180deg); opacity: 0.3; }
+  60% { transform: translate(-50%, -50%) scale(0.3) rotate(180deg); opacity: 0.3; }
+  100% { transform: translate(-50%, -50%) scale(1) rotate(360deg); opacity: 1; }
+}
+
+/* floating emoji burst */
+@keyframes emojiFloat {
+  0% { opacity: 1; transform: translate(0, 0) scale(1); }
+  100% { opacity: 0; transform: translate(var(--fx), var(--fy)) scale(0.3); }
+}
+
+/* skeleton shimmer */
+@keyframes skeletonShimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ─── Utility animation classes ─── */
+.animate-float {
+  animation: avatarFloat 3s ease-in-out infinite;
+}
+
+.animate-msg-in {
+  animation: msgSlideIn 0.3s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeSlideIn 0.4s ease-out forwards;
+}
+
+.animate-shake {
+  animation: petShake 0.5s ease-in-out;
+}
+
+.animate-happy {
+  animation: petHappy 0.6s ease-in-out;
+}
+
+.animate-switch {
+  animation: petSwitch 0.4s ease-in-out;
+}

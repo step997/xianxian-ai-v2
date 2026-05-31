@@ -1,0 +1,81 @@
+/* ═══════════════════════════════════════════
+   THEME: Dark (default)
+   ═══════════════════════════════════════════ */
+:root,
+[data-theme="dark"] {
+  --bg: #0f0f1e;
+  --bg-soft: #16162b;
+  --surface: #1e1e38;
+  --card: #252545;
+  --accent: #FF8C42;
+  --accent-soft: rgba(255, 140, 66, 0.15);
+  --accent-glow: rgba(255, 140, 66, 0.35);
+  --text: #e6e6f0;
+  --text-dim: #8888aa;
+  --bubble-ai: #252545;
+  --bubble-user: #FF8C42;
+  --bubble-user-text: #fff;
+  --border: #333358;
+  --border-light: #2a2a50;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --ring-outer: rgba(255, 140, 66, 0.25);
+  --ring-inner: rgba(255, 140, 66, 0.08);
+  --glass: rgba(30, 30, 56, 0.7);
+
+  /* layout */
+  --sidebar-width: 0px;
+  --nav-direction: row;
+  --theme-toggle-top: 14px;
+  --theme-toggle-right: 14px;
+}
+
+/* ═══════════════════════════════════════════
+   THEME: Light
+   ═══════════════════════════════════════════ */
+[data-theme="light"] {
+  --bg: #f8f7f4;
+  --bg-soft: #f0eeea;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --accent: #FF8C42;
+  --accent-soft: rgba(255, 140, 66, 0.1);
+  --accent-glow: rgba(255, 140, 66, 0.25);
+  --text: #2d2d2d;
+  --text-dim: #999999;
+  --bubble-ai: #f0eeea;
+  --bubble-user: #FF8C42;
+  --bubble-user-text: #fff;
+  --border: #e8e6e2;
+  --border-light: #f0eeea;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --ring-outer: rgba(255, 140, 66, 0.18);
+  --ring-inner: rgba(255, 140, 66, 0.05);
+  --glass: rgba(255, 255, 255, 0.7);
+}
+
+/* ═══════════════════════════════════════════
+   THEME: Blue
+   ═══════════════════════════════════════════ */
+[data-theme="blue"] {
+  --bg: #eef2ff;
+  --bg-soft: #e4e9fc;
+  --surface: #ffffff;
+  --card: #ffffff;
+  --accent: #FF8C42;
+  --accent-soft: rgba(255, 140, 66, 0.1);
+  --accent-glow: rgba(255, 140, 66, 0.22);
+  --text: #1a1a2e;
+  --text-dim: #7b89a8;
+  --bubble-ai: #f4f7ff;
+  --bubble-user: #FF8C42;
+  --bubble-user-text: #fff;
+  --border: #dce3f8;
+  --border-light: #eef2ff;
+  --shadow: 0 8px 32px rgba(66, 99, 200, 0.07);
+  --shadow-sm: 0 2px 8px rgba(66, 99, 200, 0.04);
+  --ring-outer: rgba(255, 140, 66, 0.16);
+  --ring-inner: rgba(255, 140, 66, 0.05);
+  --glass: rgba(255, 255, 255, 0.7);
+}

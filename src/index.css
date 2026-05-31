@@ -1,0 +1,10 @@
+/* src/index.css — 样式入口 */
+@import './styles/themes.css';
+@import './styles/global.css';
+@import './styles/animations.css';
+@import './styles/responsive.css';
+
+#root {
+  width: 100%;
+  min-height: 100dvh;
+}
