@@ -37,7 +37,7 @@ export function setPersona(personaId: string): void {
 }
 
 export function getServerUrl(): string {
-  return (localStorage.getItem(STORAGE_KEYS.SERVER) || 'http://localhost:8000').replace(/\/+$/, '');
+  return (localStorage.getItem(STORAGE_KEYS.SERVER) || 'http://42.193.137.250:8000').replace(/\/+$/, '');
 }
 
 export function setServerUrl(url: string): void {

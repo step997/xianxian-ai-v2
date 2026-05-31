@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { useTheme } from '../hooks/useTheme';
-import { THEME_ICONS, THEME_LABELS, type Theme } from '../types/theme';
+import { THEME_ICONS, THEME_LABELS } from '../types/theme';
 import { useChatStore } from '../stores/chatStore';
 import { usePersonaStore } from '../stores/personaStore';
 import { Modal } from '../components/Modal';
@@ -19,7 +19,7 @@ const settingBtnStyle: React.CSSProperties = {
 
 export function MePage() {
   const { user, logout } = useAuth();
-  const { theme, cycleTheme, setTheme: setThemeFn } = useTheme();
+  const { theme, cycleTheme } = useTheme();
   const navigate = useNavigate();
   const { showToast } = useToast();
   const clearHistory = useChatStore((s) => s.clearHistory);
